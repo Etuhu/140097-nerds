@@ -22,10 +22,38 @@
     </header>
     <main>
       <aside>
-        <h2>Стоимость:</h2>
+        <form action="/echo" method="post">
+          <b>Стоимость:</b>
+          <br>
+          <b>Сетка:</b>
+          <ul>
+            <li><label><input type="radio" name="type-of-site" value="adaptive" checked>Адаптивная</label></li>
+            <li><label><input type="radio" name="type-of-site" value="fixed">Фиксированная</label></li>
+            <li><label><input type="radio" name="type-of-site" value="rubbery">Резиновая</label></li>
+          </ul>
+          <b>Особенности:</b>
+          <ul>
+            <li><label><input type="checkbox" name="slider" checked>Слайдер</label></li>
+            <li><label><input type="checkbox" name="features-block">Блок преимуществ</label></li>
+            <li><label><input type="checkbox" name="news-block" checked>Новости</label></li>
+            <li><label><input type="checkbox" name="gallery">Галерея</label></li>
+            <li><label><input type="checkbox" name="basket">Корзина</label></li>
+          </ul>
+          <button type="submit">Показать</button>
+      </form>
       </aside>
       <section>
         <h2 class="visually-hidden">Каталог сайтов</h2>
+        <b>Сортировать:</b>
+        <ul>
+          <li><label><input type="radio" name="product-group" value="price" checked>По цене</label></li>
+          <li><label><input type="radio" name="product-group" value="type">По типу</label></li>
+          <li><label><input type="radio" name="product-group" value="entitlement">По названию</label></li>
+        </ul>
+        <ul>
+          <li><label><input type="radio" name="product-price" value="maxprice" checked>&#9660;</label></li>
+          <li><label><input type="radio" name="product-price" value="minprice">&#9650;</label></li>
+        </ul>
         <ul>
           <li>
             <p>
@@ -88,11 +116,11 @@
             <a>Купить</a>
           </li>
         </ul>
-        <ul class="pagination-list">
-          <li class="pagination-item"><a href="#">1</a></li>
-          <li class="pagination-item pagination-item-current"><a>2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
+        <ul>
+          <li><a>1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Следующая</a></li>
         </ul>
       </section>
       <section>
