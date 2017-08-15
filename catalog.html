@@ -7,7 +7,7 @@
   <body>
     <header>
       <nav>
-        <img src="http://via.placeholder.com/160x55" width="160" height="55" alt="Логотип студии Нёрдс" title="Нёрдс - дизайн-студия из Краснодара">
+        <img src="index.html" width="160" height="55" alt="Логотип студии Нёрдс" title="Нёрдс - дизайн-студия из Краснодара">
         <ul>
           <li><a href="about.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
@@ -26,11 +26,9 @@
           <b>Стоимость:</b>
           <br>
           <b>Сетка:</b>
-          <ul>
-            <li><label><input type="radio" name="type-of-site" value="adaptive" checked>Адаптивная</label></li>
-            <li><label><input type="radio" name="type-of-site" value="fixed">Фиксированная</label></li>
-            <li><label><input type="radio" name="type-of-site" value="rubbery">Резиновая</label></li>
-          </ul>
+          <label><input type="radio" name="type-of-site" value="adaptive" checked>Адаптивная</label>
+          <label><input type="radio" name="type-of-site" value="fixed">Фиксированная</label>
+          <label><input type="radio" name="type-of-site" value="rubbery">Резиновая</label>          
           <b>Особенности:</b>
           <ul>
             <li><label><input type="checkbox" name="slider" checked>Слайдер</label></li>
@@ -40,83 +38,67 @@
             <li><label><input type="checkbox" name="basket">Корзина</label></li>
           </ul>
           <button type="submit">Показать</button>
-      </form>
+        </form>
       </aside>
       <section>
         <h2 class="visually-hidden">Каталог сайтов</h2>
         <b>Сортировать:</b>
-        <ul>
-          <li><label><input type="radio" name="product-group" value="price" checked>По цене</label></li>
-          <li><label><input type="radio" name="product-group" value="type">По типу</label></li>
-          <li><label><input type="radio" name="product-group" value="entitlement">По названию</label></li>
-        </ul>
-        <ul>
-          <li><label><input type="radio" name="product-price" value="maxprice" checked>&#9660;</label></li>
-          <li><label><input type="radio" name="product-price" value="minprice">&#9650;</label></li>
-        </ul>
+        <a>По цене</a>
+        <a>По типу</a>
+        <a>По названию</a>
+        <a>&#9660;</a>
+        <a>&#9650;</a>
         <ul>
           <li>
-            <p>
-              <a>
-                <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="Седона">
-              </a>
-            </p>
+            <a>
+              <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="Седона">
+            </a>            
             <h3>Sedona</h3>
             <p>Информационный сайт для туристов</p>
             <a>9 900 руб.</a>
           </li>
           <li>
-            <p>
-              <a>
-                <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="Pink">
-              </a>
-            </p>
+            <a>
+              <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="Pink">
+            </a>
             <h3>Pink</h3>
             <p>Описание сайта</p>
             <a>Купить</a>
           </li>
           <li>
-            <p>
-              <a>
-                <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="Барбершоп Бородинский">
-              </a>
-            </p>
+            <a>
+              <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="Барбершоп Бородинский">
+            </a>            
             <h3>Барбершоп Бородинский</h3>
             <p>Описание сайта</p>
             <a>Купить</a>
           </li>
           <li>
-            <p>
-              <a>
-                <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="Мишка">
-              </a>
-            </p>
+            <a>
+              <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="Мишка">
+            </a>
             <h3>Мишка</h3>
             <p>Описание сайта</p>
             <a>Купить</a>
           </li>
           <li>
-            <p>
-              <a>
-                <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="А+">
-              </a>
-            </p>
+            <a>
+              <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="А+">
+            </a>
             <h3>А+</h3>
             <p>Описание сайта</p>
             <a>Купить</a>
           </li>
           <li>
-            <p>
-              <a>
-                <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="Кваст">
-              </a>
-            </p>
+            <a>
+              <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="Кваст">
+            </a>
             <h3>Кваст</h3>
             <p>Описание сайта</p>
             <a>Купить</a>
           </li>
         </ul>
-        <ul>
+        <ul class="paginator">
           <li><a>1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
@@ -128,9 +110,7 @@
         <div>
           <h2 class="visually-hidden">Контакты студии Нёрдс</h2>
           <p>Nёrds design studio</p>
-          <p>191186, Санкт-Петербург,
-            <br>ул. Б. Конюшенная, д. 19/8
-          </p>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
           <p><a href="writetous.html">Напишите нам</a></p>
         </div>
@@ -138,7 +118,7 @@
       </section>
     </main>
     <footer>
-      <ul>
+      <ul class="social">
         <li><a href="https://vk.com">Вконтакте</a></li>
         <li><a href="https://facebook.com">Фейсбук</a></li>
         <li><a href="https://www.instagram.com/">Инстаграм</a></li>
