@@ -7,7 +7,7 @@
   <body>
     <header>
       <nav>
-        <img src="index.html" width="160" height="55" alt="Логотип студии Нёрдс" title="Нёрдс - дизайн-студия из Краснодара">
+        <a href="index.html"><img src="http://via.placeholder.com/160x55" width="160" height="55" alt="Логотип студии Нёрдс" title="Нёрдс - дизайн-студия из Краснодара"></a>
         <ul>
           <li><a href="about.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
@@ -25,9 +25,11 @@
         <form action="/echo" method="post">
           <p><b>Стоимость:</b></p>
           <p><b>Сетка:</b></p>
-          <label><input type="radio" name="type-of-site" value="adaptive" checked>Адаптивная</label>
-          <label><input type="radio" name="type-of-site" value="fixed">Фиксированная</label>
-          <label><input type="radio" name="type-of-site" value="rubbery">Резиновая</label>
+          <ul>
+            <li><label><input type="radio" name="type-of-site" value="adaptive" checked>Адаптивная</label></li>
+            <li><label><input type="radio" name="type-of-site" value="fixed">Фиксированная</label></li>
+            <li><label><input type="radio" name="type-of-site" value="rubbery">Резиновая</label></li>
+          </ul>
           <p><b>Особенности:</b></p>
           <ul>
             <li><label><input type="checkbox" name="slider" checked>Слайдер</label></li>
@@ -41,60 +43,64 @@
       </aside>
       <section>
         <h2 class="visually-hidden">Каталог сайтов</h2>
-        <b>Сортировать:</b>
-        <a>По цене</a>
-        <a>По типу</a>
-        <a>По названию</a>
-        <a>&#9660;</a>
-        <a>&#9650;</a>
         <div>
-          <a>
+          <b>Сортировать:</b>
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По названию</a>
+          <a href="#">&#9660;</a>
+          <a href="#">&#9650;</a>
+        </div>
+        <ul class="product-list">
+          <li class="catalog-item">
             <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="Седона">
-          </a>
-          <h3>Sedona</h3>
-          <p>Информационный сайт для туристов</p>
-          <a>9 900 руб.</a>
-        </div>
-        <div>
-          <a>
+            <div>
+              <h3>Sedona</h3>
+              <p>Информационный сайт для туристов</p>
+              <a>9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
             <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="Pink">
-          </a>
-          <h3>Pink App</h3>
-          <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <a>9 900 руб.</a>
-        </div>
-        <div>
-          <a>
+            <div>
+              <h3>Pink App</h3>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <a>9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
             <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="Барбершоп Бородинский">
-          </a>
-          <h3>Barbershop</h3>
-          <p>Сайт салона красоты. Для мужчин, да.</p>
-          <a>9 900 руб.</a>
-        </div>
-        <div>
-          <a>
+            <div>
+              <h3>Barbershop</h3>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <a>9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
             <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="Мишка">
-          </a>
-          <h3>Mishka</h3>
-          <p>Интернет-магазин вязаных игрушек</p>
-          <a>9 900 руб.</a>
-        </div>
-        <div>
-          <a>
+            <div>
+              <h3>Mishka</h3>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <a>9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
             <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="А+">
-          </a>
-          <h3>А Plus</h3>
-          <p>Лендинг курсов повышения квалификации</p>
-          <a>9 900 руб.</a>
-        </div>
-        <div>
-          <a>
+            <div>
+              <h3>А Plus</h3>
+              <p>Лендинг курсов повышения квалификации</p>
+              <a>9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
             <img src="http://via.placeholder.com/130x220" width="130" height="220" alt="Кваст">
-          </a>
-          <h3>Кваст</h3>
-          <p>Промо-сайт производителя крафтового кваса</p>
-          <a>9 900 руб.</a>
-        </div>
+            <div>
+              <h3>Кваст</h3>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <a>9 900 руб.</a>
+            </div>
+          </li>
+        </ul>
         <ul class="paginator">
           <li><a>1</a></li>
           <li><a href="#">2</a></li>
