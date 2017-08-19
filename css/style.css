@@ -1,0 +1,42 @@
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: rgb(40, 49, 54);
+  font-weight: normal;
+}
+
+h1.title-1 {
+  font-size: 55px;
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  font-weight: normal;
+}
+
+h2.title-2 {
+  font-size: 45px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  font-weight: bold;
+}
+
+h3.title-3 {
+  font-size: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+
+h3.title-item {
+  font-size: 18px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.667;
+
+}
