@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -39,6 +41,11 @@
           <p>Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
           <a class="btn feature-btn" href="catalog.html">Узнать больше</a>
         </div>-->
+        <ul>
+          <li class="slider slider-item"></li>
+          <li class="slider slider-item"></li>
+          <li class="slider slider-item"></li>
+        </ul>
       </section>
       <section class="products">
         <h2 class="visually-hidden">Продукты студии Нёрдс</h2>
@@ -111,11 +118,12 @@
         <img src="img\map.png" width="1440" height="416" alt="Студия Нёрдс на карте города">
       </section>
       <section>
-          <h2 class="title-2">Напишите нам</h1>
+          <h2 class="title-2">Напишите нам</h2>
+          <div class="close-btn"></div>
           <form action="/echo" method="post">
-              <label class="userdata">Ваше имя:<input type="text" name="username" placeholder="Представьтесь, пожалуйста"></label>
-              <label class="userdata">Ваш e-mail:<input type="text" name="e-mail" placeholder="Для отправки ответа"></label>
-              <label class="userdata">Текст письма:<textarea type="text" name="usertext" rows="5" placeholder="В свободной форме"></textarea></label>
+              <label class="userdata">Ваше имя:<input class="field datafield" type="text" name="username" placeholder="Представьтесь, пожалуйста"></label>
+              <label class="userdata">Ваш e-mail:<input class="field datafield" type="text" name="e-mail" placeholder="Для отправки ответа"></label>
+              <label class="userdata">Текст письма:<textarea class="field letterfield" type="text" name="usertext" rows="5" placeholder="В свободной форме"></textarea></label>
               <button class="btn btn-form" type="submit">Отправить</button>
           </form>
       </section>
