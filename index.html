@@ -2,8 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
   </head>
@@ -17,8 +17,8 @@
           <li class="main-menu-item"><a href="catalog.html">Магазин</a></li>
           <li class="main-menu-item"><a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul class="main-menu-navigation">
-          <li class="main-menu-item"><a href="basket.html">Корзина</a></li>
+        <ul class="main-menu-cart">
+          <li class="main-menu-item cart"><a href="cart.html">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -26,26 +26,25 @@
       <section class="features">
         <h1 class="visually-hidden">Особенности студии Нёрдс</h1>
         <div class="feature-item feature-1">
-          <p class="feature-item-title">Долго, дорого,
-          <br>скурпулезно.</p>
-          <p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
+          <p class="feature-item-title">Долго, дорого, скурпулезно.</p>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
           <a class="btn feature-btn" href="catalog.html">Узнать больше</a>
         </div>
-    <!--<div class="feature-item feature-2">
-          <p class="feature-item-title">Любим математику <br>как никто другой</p>
-          <p>Никакого креатива, только математические формулы <br>для расчета идеальных пропорций.</p>
+        <!-- <div class="feature-item feature-2">
+          <p class="feature-item-title">Любим математику как никто другой</p>
+          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
           <a class="btn feature-btn" href="catalog.html">Узнать больше</a>
         </div>
         <div class="feature-item feature-3">
-          <p class="feature-item-title">Только ночь, <br>только хардкор</p>
-          <p>Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
+          <p class="feature-item-title">Только ночь, только хардкор</p>
+          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
           <a class="btn feature-btn" href="catalog.html">Узнать больше</a>
-        </div>-->
-        <ul>
-          <li class="slider slider-item"></li>
-          <li class="slider slider-item"></li>
-          <li class="slider slider-item"></li>
-        </ul>
+        </div> -->
+        <div class="slider">
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+          <div class="slider-item"></div>
+        </div>
       </section>
       <section class="products">
         <h2 class="visually-hidden">Продукты студии Нёрдс</h2>
@@ -70,7 +69,7 @@
       </section>
       <section class="about-us">
         <div>
-          <h2 class="title-2">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <h2 class="title-2">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
           Работаем не покладая рук, как роботы.</p>
           <h3 class="title-about-us">Выполняем заказы на разработку:</h3>
@@ -108,11 +107,10 @@
       </section>
       <section>
         <h2 class="visually-hidden">Местонахождение студии Нёрдс</h2>
-        <div>
-          <p class="writetous-title">Nёrds design studio</p>
-          <p class="writetous-paragraph">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p class="writetous-paragraph">тел. +7 (812) 275-75-75</p>
+        <div class="writetous">
+          <p>Nёrds design studio</p>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
           <p><a class="btn writetous-btn" href="writetous.html">Напишите нам</a></p>
         </div>
         <img src="img\map.png" width="1440" height="416" alt="Студия Нёрдс на карте города">
@@ -121,9 +119,9 @@
           <h2 class="title-2">Напишите нам</h2>
           <div class="close-btn"></div>
           <form action="/echo" method="post">
-              <label class="userdata">Ваше имя:<input class="field datafield" type="text" name="username" placeholder="Представьтесь, пожалуйста"></label>
-              <label class="userdata">Ваш e-mail:<input class="field datafield" type="text" name="e-mail" placeholder="Для отправки ответа"></label>
-              <label class="userdata">Текст письма:<textarea class="field letterfield" type="text" name="usertext" rows="5" placeholder="В свободной форме"></textarea></label>
+              <label class="userdata">Ваше имя:<input type="text" name="username" placeholder="Представьтесь, пожалуйста"></label>
+              <label class="userdata">Ваш e-mail:<input type="text" name="e-mail" placeholder="Для отправки ответа"></label>
+              <label class="userdata">Текст письма:<textarea name="usertext" rows="5" placeholder="В свободной форме"></textarea></label>
               <button class="btn btn-form" type="submit">Отправить</button>
           </form>
       </section>
@@ -134,8 +132,9 @@
         <a href="https://facebook.com"><span class="visually-hidden">Фейсбук</span><li class="social-btn social-btn-fb"></li></a>
         <a href="https://www.instagram.com/"><span class="visually-hidden">Инстаграм</span><li class="social-btn social-btn-insta"></li></a>
       </ul>
-      <p>
-        <b class="friendship-title">Давайте дружить, это выгодно!</b> <span class="friendship-paragraph">Скидка 10% для друзей из социальных сетей.</span>
+      <p class="friendship">
+        <span>Давайте дружить, это выгодно!</span>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
       </p>
     </footer>
   </body>
