@@ -9,38 +9,44 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-menu">
-        <img class="logo" src="img\svg-nerds\nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс" title="Нёрдс - дизайн-студия из Краснодара">
-        <ul class="main-menu-navigation">
-          <li class="main-menu-item"><a href="about.html">Студия</a></li>
-          <li class="main-menu-item"><a href="clients.html">Клиенты</a></li>
-          <li class="main-menu-item"><a href="catalog.html">Магазин</a></li>
-          <li class="main-menu-item"><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="main-menu-cart">
-          <li class="main-menu-item cart"><a href="cart.html">Корзина</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="main-menu">
+          <img class="logo" src="img\svg-nerds\nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс" title="Нёрдс - дизайн-студия из Краснодара">
+          <ul class="main-menu-navigation">
+            <li class="main-menu-item"><a href="about.html">Студия</a></li>
+            <li class="main-menu-item"><a href="clients.html">Клиенты</a></li>
+            <li class="main-menu-item"><a href="catalog.html">Магазин</a></li>
+            <li class="main-menu-item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="main-menu-cart">
+            <li class="main-menu-item cart"><a href="cart.html">Корзина</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-content">
       <section class="features">
-        <div class="container feature-1">
-          <h1 class="visually-hidden">Особенности студии Нёрдс</h1>
+        <h1 class="visually-hidden">Особенности студии Нёрдс</h1>
+        <div class="container feature-block-1">
           <div class="feature-item feature-item-1">
-            <p class="feature-item-title">Долго, дорого, скурпулезно.</p>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <p class="feature-item-title">Долго, дорого, скрупулезно.</p>
+            <p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
             <a class="btn feature-btn" href="catalog.html">Узнать больше</a>
           </div>
-          <!-- <div class="feature-item feature-2">
-            <p class="feature-item-title">Любим математику как никто другой</p>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="btn feature-btn" href="catalog.html">Узнать больше</a>
+          <!--<div class="container feature-block-2">
+             <div class="feature-item feature-item-2">
+              <p class="feature-item-title">Любим математику как никто другой</p>
+              <p>Никакого креатива, только математические формулы <br>для расчета идеальных пропорций.</p>
+              <a class="btn feature-btn" href="catalog.html">Узнать больше</a>
+            </div>
           </div>
-          <div class="feature-item feature-3">
-            <p class="feature-item-title">Только ночь, только хардкор</p>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="btn feature-btn" href="catalog.html">Узнать больше</a>
-          </div> -->
+          <div class="container feature-block-3">
+            <div class="feature-item feature-item-3">
+              <p class="feature-item-title">Только ночь, только хардкор</p>
+              <p>Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
+              <a class="btn feature-btn" href="catalog.html">Узнать больше</a>
+            </div>
+          </div>-->
           <div class="slider">
             <div class="slider-item"></div>
             <div class="slider-item"></div>
@@ -49,63 +55,69 @@
         </div>
       </section>
       <section class="products">
-        <h2 class="visually-hidden">Продукты студии Нёрдс</h2>
-        <div>
-          <img src="img\illustration-1.png" width="300" height="146" alt="Веб-сайты">
-          <h3 class="title-3">Веб-сайты</h3>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="btn order-btn order-site-btn" href="order.html">Заказать</a>
+        <div class="container product-block">
+          <h2 class="visually-hidden">Продукты студии Нёрдс</h2>
+          <div class="product-item product-item-site">
+            <img src="img\illustration-1.png" width="300" height="146" alt="Веб-сайты">
+            <h3 class="title-3">Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="btn order-btn order-site-btn" href="order.html">Заказать</a>
+          </div>
+          <div class="product-item product-item-app">
+            <img src="img\illustration-2.png" width="300" height="146" alt="Приложения">
+            <h3 class="title-3">Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="btn order-btn order-app-btn" href="order.html">Заказать</a>
+          </div>
+          <div  class="product-item product-item-presentation">
+            <img src="img\illustration-3.png" width="300" height="146" alt="Презентации">
+            <h3 class="title-3">Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="btn order-btn order-presentation-btn" href="order.html">Заказать</a>
+          </div>
         </div>
-        <div>
-          <img src="img\illustration-2.png" width="300" height="146" alt="Приложения">
-          <h3 class="title-3">Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="btn order-btn order-app-btn" href="order.html">Заказать</a>
-        </div>
-        <div>
-          <img src="img\illustration-3.png" width="300" height="146" alt="Презентации">
-          <h3 class="title-3">Презентации</h3>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="btn order-btn order-presentation-btn" href="order.html">Заказать</a>
-        </div>
+        <hr align="center" color="#eeeeee" size="2px" width="1160px" noshade>
       </section>
       <section class="about-us">
-        <div>
-          <h2 class="title-2">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
-          Работаем не покладая рук, как роботы.</p>
-          <h3 class="title-about-us">Выполняем заказы на разработку:</h3>
-          <ul class="abilities">
-            <li class="ability-item">Веб-сайтов любой сложности</li>
-            <li class="ability-item">Мобильных приложений для iOS и Android</li>
-            <li class="ability-item">Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
+        <div class="container about-us-block">
+          <div class="about-us-description">
+            <h2 class="title-2">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
+            Работаем не покладая рук, как роботы.</p>
+            <h3 class="title-about-us">Выполняем заказы на разработку:</h3>
+            <ul class="abilities">
+              <li class="ability-item">Веб-сайтов любой сложности</li>
+              <li class="ability-item">Мобильных приложений для iOS и Android</li>
+              <li class="ability-item">Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+          <div class="about-us-advantage">
+            <img src="img\nerds-illustration.png" width="360" height="208" alt="Нёрдс - дизайн-студия из Краснодара" title="Нёрдс - дизайн-студия из Краснодара">
+            <table class="advantages">
+              <caption class="title-about-us">С 2004 года любим точность во всем:</caption>
+              <tr class="advantage-percent">
+                <th class="advantage-percent-item">146<sup>%</sup></th>
+                <th class="advantage-percent-item">100<sup>%</sup></th>
+                <th class="advantage-percent-item">50<sup>%</sup></th>
+              </tr>
+              <tr class="advantage-percent">
+                <td class="advantage-percent-title">Уровень самоотдачи</td>
+                <td class="advantage-percent-title">Соблюдение сроков</td>
+                <td class="advantage-percent-title">Минимальная предоплата</td>
+              </tr>
+            </table>
+          </div>
         </div>
-        <div>
-          <img src="img\nerds-illustration.png" width="360" height="208" alt="Нёрдс - дизайн-студия из Краснодара" title="Нёрдс - дизайн-студия из Краснодара">
-        </div>
-        <div>
-          <table class="advantages" width="360px">
-            <caption class="title-about-us">С 2004 года любим точность во всем:</caption>
-            <tr class="advantage-percent">
-              <th class="advantage-percent-item">146%</th>
-              <th class="advantage-percent-item">100%</th>
-              <th class="advantage-percent-item">50%</th>
-            </tr>
-            <tr class="advantage-percent">
-              <td class="advantage-percent-title">Уровень самоотдачи</td>
-              <td class="advantage-percent-title">Соблюдение сроков</td>
-              <td class="advantage-percent-title">Минимальная предоплата</td>
-            </tr>
-          </table>
-        </div>
+        <hr align="center" color="#eeeeee" size="2px" width="1160px" noshade>
       </section>
       <section class="partners">
-        <h2 class="visually-hidden">Партнеры студии Нёрдс</h2>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img\logo-1.png" width="199" height="68" alt="Логотип HTML Академии" title="HTML Академия"></a>
-        <a href="#"><img src="img\logo-2.png" width="209" height="90" alt="Логотип Барбершопа Бородинский" title="Барбершоп Бородинский"></a>
-        <a href="#"><img src="img\logo-3.png" width="185" height="52" alt="Логотип проекта PiNK" title="Яркий мир вместе с PiNK"></a>
-        <a href="#"><img src="img\logo-4.png" width="173" height="84" alt="Логотип магазина игрушек Mishka" title="Магазин игрушек Mishka"></a>
+        <div class="container partners-block">
+          <h2 class="visually-hidden">Партнеры студии Нёрдс</h2>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img\logo-1.png" width="199" height="68" alt="Логотип HTML Академии" title="HTML Академия"></a>
+          <a href="#"><img src="img\logo-2.png" width="209" height="90" alt="Логотип Барбершопа Бородинский" title="Барбершоп Бородинский"></a>
+          <a href="#"><img src="img\logo-3.png" width="185" height="52" alt="Логотип проекта PiNK" title="Яркий мир вместе с PiNK"></a>
+          <a href="#"><img src="img\logo-4.png" width="173" height="84" alt="Логотип магазина игрушек Mishka" title="Магазин игрушек Mishka"></a>
+        </div>
       </section>
       <section>
         <h2 class="visually-hidden">Местонахождение студии Нёрдс</h2>

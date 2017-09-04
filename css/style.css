@@ -27,10 +27,9 @@ a {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
-  outline: 2px solid yellow;
+  padding: 0 20px;
 }
 
 .main-header {
@@ -100,13 +99,14 @@ li.current-menu-item {
 
 .features {
   display: flex;
-  height: 425px;
+  height: 430px;
   background-color: #eeeeee;
   outline: 2px solid blue;
 }
 
 .btn {
   display: inline-block;
+  padding: 16px 0;
   line-height: 18px;
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-weight: normal;
@@ -133,30 +133,43 @@ li.current-menu-item {
 }
 
 .feature-item {
-  width: 1160px;
-  height: 425px;
+  height: 280px;
+  margin-top: 75px;
+  outline: 2px solid black;
 }
 
 .feature-item-1 {
   width: 380px;
-  height: 275px;
-  margin-top: 80px;
 }
 
-.feature-1 {
+.feature-item-2 {
+  width: 520px;
+}
+
+.feature-item-3 {
+  width: 460px;
+}
+
+.feature-item p:nth-child(2) {
+  margin-bottom: 41px;
+}
+
+.feature-block-1 {
   background-image: url("../img/slide1.png");
-  background-position: 430px 50%;
+  background-position: 450px 18px;
   background-repeat: no-repeat;
 }
 
-.feature-2 {
+.feature-block-2 {
   background-image: url("../img/slide2.png");
-  background-position: 430px 50%;
+  background-position: 515px 0;
+  background-repeat: no-repeat;
 }
 
-.feature-3 {
+.feature-block-3 {
   background-image: url("../img/slide3.png");
-  background-position: 400px 50%;
+  background-position: 420px 18px;
+  background-repeat: no-repeat;
 }
 
 .feature-item-title {
@@ -166,37 +179,59 @@ li.current-menu-item {
   font-weight: normal;
   color: #000000;
   text-align: left;
+  margin-bottom: 28px;
+}
+
+.slider {
+  display: flex;
+  justify-content:space-between;
+  position: relative;
+  bottom: 38px;
+  width: 85px;
+  height: 18px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
 .slider-item {
-  position: absolute;
   width: 18px;
   height: 18px;
+  padding: 0;
   background-color: #ffffff;
   border-radius: 50%;
-}
-
-.slider-item:first-child {
-  top: 571px;
-  left: 536px;
-}
-
-.slider-item:nth-child(2) {
-  top: 571px;
-  left: 575px;
-}
-
-.slider-item:last-child {
-  top: 571px;
-  left: 614px;
 }
 
 .products,
 .about-us,
 .partners {
-  width: 1160px;
+  width: 100%;
   background-color: #ffffff;
-  border-bottom: 2px solid #eeeeee;
+}
+
+.products {
+  margin-top: 80px;
+  outline: 2px solid red;
+}
+
+.product-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.product-item {
+  width: 360px;
+  height: 348px;
+}
+
+.product-item h3.title-3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.product-item p {
+  max-width: 260px;
+  margin-bottom: 33px;
 }
 
 .order-btn {
@@ -246,11 +281,59 @@ li.current-menu-item {
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
+.about-us-block {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 55px;
+}
+
+.about-us-description {
+  width: 660px;
+  margin-top: 28px;
+}
+
+.about-us-description .title-2 {
+  margin-bottom: 35px;
+}
+
+.about-us-description p {
+  margin-bottom: 40px;
+}
+
+.abilities {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 435px;
+  min-height: 115px;
+  margin-top: 22px;
+  outline: 2px solid red;
+}
+
+.about-us-advantage {
+  width: 360px;
+  height: 415px;
+  margin-top: 32px;
+}
+
 .ability-item {
   list-style: none;
 }
 
+.advantages {
+  width: 360px;
+  min-height: 100px;
+  margin-top: 30px;
+}
+
+caption.title-about-us {
+  margin-bottom: 50px;
+}
+
 .advantage-percent-item {
+  width: 120px;
+  text-align: left;
+  vertical-align: top;
   font-size: 45px;
   line-height: 10,06px;
   font-family: "Roboto", "Arial", sans-serif;
@@ -258,20 +341,38 @@ li.current-menu-item {
   color: #000000;
 }
 
+.advantage-percent-item sup {
+  font-size: 28px;
+}
+
 .advantage-percent-title {
   line-height: 18px;
   color: #283136;
 }
 
-.partners a {
-  opacity: 0.2;
+.partners-block {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  text-align: center;
 }
 
-.partners a:hover {
+.partners-block a {
+  width: 300px;
+  min-height: 95px;
+  opacity: 0.2;
+  outline: 2px solid red;
+}
+
+.partners-block a:last-child {
+  width: 260px;
+}
+
+.partners-block a:hover {
   opacity: 1;
 }
 
-.partners a:active {
+.partners-block a:active {
   opacity: 0.1;
 }
 
