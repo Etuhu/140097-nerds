@@ -6,9 +6,11 @@ html {
   box-sizing: inherit;
 }
 
+html,
 body {
   width: 1440px;
   min-width: 1160px;
+  min-height: 2475px;
   font-size: 16px;
   line-height: 24px;
   font-family: "Roboto", "Arial", sans-serif;
@@ -24,6 +26,19 @@ a {
   text-transform: uppercase;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  outline: 2px solid yellow;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  background-color: #eeeeee;
+}
+
 .logo:hover {
   opacity: 0.8;
 }
@@ -33,12 +48,35 @@ a {
 }
 
 .main-menu {
-  width: 100%;
-  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1160px;
+  margin: 0;
+  margin-top: 49px;
+  padding: 0;
+}
+
+.main-menu-navigation {
+  display: flex;
+  width: 437px;
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+  justify-content: space-between;
+  outline: 2px solid red;
+}
+
+.main-menu-cart {
+  display: flex;
+  width: 160px;
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+  justify-content: flex-end;
 }
 
 .main-menu-item {
-  display: inline-block;
   list-style: none;
 }
 
@@ -56,10 +94,15 @@ li.current-menu-item {
   padding-bottom: 10px;
 }
 
+.main-content {
+  outline: 2px solid red;
+}
+
 .features {
-  width: 100%;
+  display: flex;
   height: 425px;
   background-color: #eeeeee;
+  outline: 2px solid blue;
 }
 
 .btn {
@@ -92,12 +135,18 @@ li.current-menu-item {
 .feature-item {
   width: 1160px;
   height: 425px;
-  background-repeat: no-repeat;
+}
+
+.feature-item-1 {
+  width: 380px;
+  height: 275px;
+  margin-top: 80px;
 }
 
 .feature-1 {
   background-image: url("../img/slide1.png");
   background-position: 430px 50%;
+  background-repeat: no-repeat;
 }
 
 .feature-2 {
