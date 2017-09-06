@@ -29,7 +29,6 @@ a {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  outline: 2px solid red;
 }
 
 .main-header {
@@ -87,7 +86,7 @@ a {
   opacity: 0.3;
 }
 
-li.current-menu-item {
+.current-menu-item {
   border-bottom: 2px solid #fb565a;
   padding-bottom: 6px;
 }
@@ -177,7 +176,7 @@ li.current-menu-item {
 
 .slider {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   position: relative;
   bottom: 38px;
   width: 85px;
@@ -217,7 +216,7 @@ li.current-menu-item {
   height: 348px;
 }
 
-.product-item h3.title-3 {
+.product-item .title-3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -274,6 +273,14 @@ li.current-menu-item {
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
+.bottom-line {
+  width: 1160px;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eeeeee;
+}
+
 .about-us-block {
   display: flex;
   justify-content: space-between;
@@ -282,7 +289,7 @@ li.current-menu-item {
 
 .about-us-description {
   width: 660px;
-  margin-top: 28px;
+  margin-top: 38px;
 }
 
 .about-us-description .title-2 {
@@ -305,7 +312,7 @@ li.current-menu-item {
 .about-us-advantage {
   width: 360px;
   height: 415px;
-  margin-top: 32px;
+  margin-top: 42px;
 }
 
 .ability-item {
@@ -319,7 +326,7 @@ li.current-menu-item {
 }
 
 caption.title-about-us {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .advantage-percent-item {
@@ -327,7 +334,7 @@ caption.title-about-us {
   text-align: left;
   vertical-align: top;
   font-size: 45px;
-  line-height: 10,06px;
+  line-height: 10.06px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
   color: #000000;
@@ -347,7 +354,7 @@ caption.title-about-us {
   justify-content: space-between;
   width: 1160px;
   min-height: 100px;
-  margin-top: 46px;
+  margin-top: 53px;
   margin-bottom: 33px;
 }
 
@@ -383,11 +390,11 @@ caption.title-about-us {
   opacity: 0.1;
 }
 
-.map {
-  margin-top: 80px;
+.last-bottom-line {
+  margin-bottom: 80px;
 }
 
-h1.title-1 {
+.title-1 {
   font-size: 55px;
   line-height: 55px;
   font-family: "Roboto Medium", "Arial", sans-serif;
@@ -395,7 +402,7 @@ h1.title-1 {
   color: #000000;
 }
 
-h2.title-2 {
+.title-2 {
   font-size: 45px;
   line-height: 45px;
   font-family: "Roboto Medium", "Arial", sans-serif;
@@ -469,6 +476,7 @@ a.writetous-btn:active {
 }
 
 .writetous-modal {
+  display: none;
   width: 960px;
   min-height: 590px;
   margin: 0 auto;
@@ -518,37 +526,37 @@ a.writetous-btn:active {
   color: #000000;
 }
 
-textarea,
-input[type="text"] {
+.message-text,
+.userdata-text[type="text"] {
   border: 2px solid #d7dcde;
 }
 
-textarea:hover,
-input[type="text"]:hover {
+.message-text:hover,
+.userdata-text[type="text"]:hover {
   border: 2px solid #b4b9bb;
 }
 
-textarea:focus,
-input[type="text"]:focus {
+.message-text:focus,
+.userdata-text[type="text"]:focus {
   line-height: 18px;
   color: #000000;
   outline: none;
   border: 2px solid #000000;
 }
 
-textarea:invalid,
-input[type="text"]:invalid {
+.message-text:invalid,
+.userdata-text[type="text"]:invalid {
   line-height: 18px;
   color: #e74246;
   border: 2px solid #e74246;
 }
 
-input[type="text"] {
+.userdata-text[type="text"] {
   width: 360px;
   height: 50px;
 }
 
-textarea {
+.message-text {
   width: 760px;
   height: 118px;
 }
@@ -558,7 +566,7 @@ textarea {
   height: 50px;
   text-transform: uppercase;
   background-color: #fb565a;
-  border: none;
+  border: 0;
 }
 
 .main-footer {
@@ -582,6 +590,7 @@ textarea {
   min-height: 75px;
   margin-top: 11px;
   padding-left: 0;
+  list-style: none;
 }
 
 .social-btn {
@@ -656,23 +665,26 @@ textarea {
   height: 235px;
   padding-top: 31px;
   background-color: #eeeeee;
-  text-align: center;
 }
 
 .catalog-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .filters {
   width: 260px;
+  height: 800px;
   margin-top: 35px;
-  outline: 2px solid red;
+  padding: 0;
 }
 
 .range {
-  width: 261px;
+  width: 260px;
   height: 81px;
+  margin-top: 51px;
+  margin-bottom: 14px;
   background-color: #eeeeee;
 }
 
@@ -688,7 +700,7 @@ textarea {
   background-color: #d7dcde;
 }
 
-input[type="number"] {
+.price {
   width: 80px;
   line-height: 22px;
   color: #283136;
@@ -699,24 +711,48 @@ input[type="number"] {
   width: 80px;
   line-height: 22px;
   color: #283136;
+  text-transform: uppercase;
+}
+
+.pricerange-block {
+  margin-bottom: 62px;
+}
+
+.layouts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 105px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .layouts label,
 .layouts-features label,
 .layouts-features label:hover,
-input[type="radio"],
-input[type="checkbox"],
-input[type="checkbox"]:hover {
+.filter-item,
+.filter-item:hover {
   line-height: 20px;
   color: #283136;
+}
+
+.layouts-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 190px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .layouts label:hover {
   color: #000000;
 }
 
-input:disabled,
-label.disabled {
+.filter-item:disabled,
+.disabled {
   color: #283136;
   opacity: 0.3;
 }
@@ -734,7 +770,7 @@ label.disabled {
   font-weight: normal;
   color: #000000;
   text-transform: uppercase;
-  border: none;
+  border: 0;
   background-color: #eeeeee;
 }
 
@@ -748,10 +784,21 @@ label.disabled {
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-.sorting-block {
+.catalog {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 800px;
+  margin-top: 35px;
+  background-color: #ffffff;
+}
+
+.sorting-container {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
   width: 760px;
+  padding-top: 5px;
 }
 
 .sorting {
@@ -760,6 +807,13 @@ label.disabled {
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
+}
+
+.sorting-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
 }
 
 .sorting-type {
@@ -808,13 +862,13 @@ label.disabled {
   justify-content: space-between;
   width: 800px;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .catalog-item {
-  display: flex;
   width: 360px;
   height: 576px;
-  margin-bottom: 50px;
+  margin-bottom: 72px;
   list-style: none;
 }
 
@@ -836,6 +890,7 @@ label.disabled {
   position: relative;
   width: 360px;
   height: 231px;
+  bottom: 255px;
   background-color: #eeeeee;
   text-align: center;
 }
@@ -856,41 +911,54 @@ label.disabled {
 }
 
 .paginator {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  width: 443px;
+  margin: 0;
+  margin-left: 40px;
+  margin-top: 12px;
+  padding: 0;
   list-style: none;
 }
 
-.paginator-item a {
-  display: inline-block;
+.paginator-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
+  margin: 0;
+  padding: 0;
   line-height: 18px;
   font-family: "Roboto Medium", "Arial", sans-serif;
   color: #000000;
-  text-align: center;
   background-color: #eeeeee;
 }
 
-.paginator-item a:hover {
+.paginator-item:last-child {
+  width: 260px;
+}
+
+.paginator-item:hover {
   background-color: #dfdfdf;
 }
 
-.paginator-item a:active {
+.paginator-item:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-.paginator-item-current a,
-.paginator-item-current a:hover,
-.paginator-item-current a:focus,
-.paginator-item-current a:active {
+.paginator-item-current,
+.paginator-item-current:hover,
+.paginator-item-current:focus,
+.paginator-item-current:active {
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
   box-sizing: border-box;
 }
 
-h3.title-3 {
+.title-3 {
   font-size: 24px;
   line-height: 30px;
   font-family: "Roboto", "Arial", sans-serif;

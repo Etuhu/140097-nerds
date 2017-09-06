@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <nav class="main-menu">
-          <a href="index.html"><img class="logo" src="img\svg-nerds\nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс" title="Нёрдс - дизайн-студия из Краснодара"></a>
+          <a href="index.html"><img class="logo" src="img/svg-nerds/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс" title="Нёрдс - дизайн-студия из Краснодара"></a>
           <ul class="main-menu-navigation">
             <li class="main-menu-item"><a href="about.html">Студия</a></li>
             <li class="main-menu-item"><a href="clients.html">Клиенты</a></li>
@@ -36,46 +36,50 @@
               <div class="greenline"></div>
               <div class="greyline"></div>
             </div>
-            <label class="pricerange">От <input type="number" name="minprice" value="0" step="500"></label>
-            <label class="pricerange">До <input type="number" name="maxprice" value="15000" step="500"></label>
+            <div class="pricerange-block">
+              <label class="pricerange">От <input class="price min-price" type="number" name="minprice" value="0" step="500"></label>
+              <label class="pricerange">До <input class="price max-price" type="number" name="maxprice" value="15000" step="500"></label>
+            </div>
             <p class="title-item">Сетка:</p>
             <ul class="layouts">
-              <li><label><input type="radio" name="type-of-site" value="adaptive" checked> Адаптивная</label></li>
-              <li><label><input type="radio" name="type-of-site" value="fixed"> Фиксированная</label></li>
-              <li><label class="disabled"><input type="radio" name="type-of-site" value="rubbery" disabled> Резиновая</label></li>
+              <li><label><input class="filter-item filter-item-radio" type="radio" name="type-of-site" value="adaptive" checked> Адаптивная</label></li>
+              <li><label><input class="filter-item filter-item-radio" type="radio" name="type-of-site" value="fixed"> Фиксированная</label></li>
+              <li><label class="disabled"><input class="filter-item filter-item-radio" type="radio" name="type-of-site" value="rubbery" disabled> Резиновая</label></li>
             </ul>
             <p class="title-item">Особенности:</p>
             <ul class="layouts-features">
-              <li><label><input type="checkbox" name="slider" checked>Слайдер</label></li>
-              <li><label><input type="checkbox" name="features-block">Блок преимуществ</label></li>
-              <li><label><input type="checkbox" name="news-block" checked>Новости</label></li>
-              <li><label class="disabled"><input type="checkbox" name="gallery" disabled>Галерея</label></li>
-              <li><label><input type="checkbox" name="basket">Корзина</label></li>
+              <li><label><input class="filter-item filter-item-checkbox" type="checkbox" name="slider" checked>Слайдер</label></li>
+              <li><label><input class="filter-item filter-item-checkbox" type="checkbox" name="features-block">Блок преимуществ</label></li>
+              <li><label><input class="filter-item filter-item-checkbox" type="checkbox" name="news-block" checked>Новости</label></li>
+              <li><label class="disabled"><input class="filter-item filter-item-checkbox" type="checkbox" name="gallery" disabled>Галерея</label></li>
+              <li><label><input class="filter-item filter-item-checkbox" type="checkbox" name="basket">Корзина</label></li>
             </ul>
             <button class="btn filter-btn" type="submit">Показать</button>
           </form>
         </aside>
-        <section>
-          <h2 class="visually-hidden">Каталог сайтов</h2>
-          <div class="sorting-block">
+        <section class="catalog">
+          <div class="sorting-container">
+            <h2 class="visually-hidden">Каталог сайтов</h2>
             <p class="sorting">Сортировать:</p>
-            <a class="sorting sorting-type" href="#">По цене</a>
-            <a class="sorting sorting-type" href="#">По типу</a>
-            <a class="sorting sorting-type" href="#">По названию</a>
-            <a class="sorting-direction sorting-down" href="#"><span class="visually-hidden">Сортировать по убыванию</span></a>
-            <a class="sorting-direction sorting-up" href="#"><span class="visually-hidden">Сортировать по возрастанию</span></a>
+            <div class="sorting-menu">
+              <a class="sorting sorting-type" href="#">По цене</a>
+              <a class="sorting sorting-type" href="#">По типу</a>
+              <a class="sorting sorting-type" href="#">По названию</a>
+              <a class="sorting-direction sorting-down" href="#"><span class="visually-hidden">Сортировать по убыванию</span></a>
+              <a class="sorting-direction sorting-up" href="#"><span class="visually-hidden">Сортировать по возрастанию</span></a>
+            </div>
           </div>
           <ul class="product-list">
             <li class="catalog-item">
-              <img src="img\img-sedona.jpg" width="360" height="576" alt="Шаблон проекта Седона">
-              <div class="catalog-item-description visually-hidden">
+              <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон проекта Седона">
+              <div class="catalog-item-description">
                 <h3 class="title-item">Sedona</h3>
                 <p>Информационный сайт для туристов</p>
                 <a class="btn catalog-order-btn" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="catalog-item">
-              <img src="img\img-pink.jpg" width="360" height="576" alt="Шаблон проекта Pink">
+              <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон проекта Pink">
               <div class="catalog-item-description visually-hidden">
                 <h3 class="title-item">Pink App</h3>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -83,7 +87,7 @@
               </div>
             </li>
             <li class="catalog-item">
-              <img src="img\img-barbershop.jpg" width="360" height="576" alt="Шаблон проекта Барбершоп Бородинский">
+              <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон проекта Барбершоп Бородинский">
               <div class="catalog-item-description visually-hidden">
                 <h3 class="title-item">Barbershop</h3>
                 <p>Сайт салона красоты. Для мужчин, да.</p>
@@ -91,7 +95,7 @@
               </div>
             </li>
             <li class="catalog-item">
-              <img src="img\img-mishka.jpg" width="360" height="576" alt="Шаблон проекта Мишка">
+              <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон проекта Мишка">
               <div class="catalog-item-description visually-hidden">
                 <h3 class="title-item">Mishka</h3>
                 <p>Интернет-магазин вязаных игрушек</p>
@@ -99,15 +103,15 @@
               </div>
             </li>
             <li class="catalog-item">
-              <img src="img\img-aplus.jpg" width="360" height="576" alt="Шаблон проекта А+">
+              <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон проекта А+">
               <div class="catalog-item-description visually-hidden">
                 <h3 class="title-item">А Plus</h3>
                 <p>Лендинг курсов повышения квалификации</p>
                 <a class="btn catalog-order-btn" href="#">9 900 руб.</a>
-              </div class="catalog-item-description">
+              </div>
             </li>
             <li class="catalog-item">
-              <img src="img\img-kvast.jpg" width="360" height="576" alt="Шаблон проекта Кваст">
+              <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон проекта Кваст">
               <div class="catalog-item-description visually-hidden">
                 <h3 class="title-item">Кваст</h3>
                 <p>Промо-сайт производителя крафтового кваса</p>
@@ -125,8 +129,8 @@
       </div>
       <section class="map">
         <h2 class="visually-hidden">Местонахождение студии Нёрдс</h2>
-        <img src="img\map.png" width="100%" height="auto" alt="Студия Нёрдс на карте города">
-        <div class="writetous">
+        <img src="img/map.png" width="1440" height="416" alt="Студия Нёрдс на карте города">
+        <div class="writetous visually-hidden">
           <div class="writetous-container">
             <p>Nёrds design studio</p>
             <p>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
@@ -143,9 +147,9 @@
           </div>
           <div class="modal-user-form">
             <form action="/echo" method="post">
-                <label class="userdata">Ваше имя:<input type="text" name="username" placeholder="Представьтесь, пожалуйста"></label>
-                <label class="userdata">Ваш e-mail:<input type="text" name="e-mail" placeholder="Для отправки ответа"></label>
-                <label class="userdata">Текст письма:<textarea name="usertext" rows="5" placeholder="В свободной форме"></textarea></label>
+                <label class="userdata">Ваше имя:<input class="userdata-text" type="text" name="username" placeholder="Представьтесь, пожалуйста"></label>
+                <label class="userdata">Ваш e-mail:<input class="userdata-text" type="text" name="e-mail" placeholder="Для отправки ответа"></label>
+                <label class="userdata">Текст письма:<textarea class="message-text" name="usertext" rows="5" placeholder="В свободной форме"></textarea></label>
                 <button class="btn btn-form" type="submit">Отправить</button>
             </form>
           </div>
@@ -156,9 +160,9 @@
       <div class="container">
         <div class="footer-container">
           <ul class="social">
-            <a href="https://vk.com"><li class="social-btn social-btn-vk"><span class="visually-hidden">Вконтакте</span></li></a>
-            <a href="https://facebook.com"><span class="visually-hidden">Фейсбук</span><li class="social-btn social-btn-fb"></li></a>
-            <a href="https://www.instagram.com/"><span class="visually-hidden">Инстаграм</span><li class="social-btn social-btn-insta"></li></a>
+            <li><a class="social-btn social-btn-vk" href="https://vk.com"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li><a class="social-btn social-btn-fb" href="https://facebook.com"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="social-btn social-btn-insta" href="https://www.instagram.com/"><span class="visually-hidden">Инстаграм</span></a></li>
           </ul>
           <div class="friendship">
             <span>Давайте дружить, это выгодно!</span>
