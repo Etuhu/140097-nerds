@@ -9,7 +9,7 @@ html {
 html,
 body {
   width: 1440px;
-  min-width: 1160px;
+  min-width: 1200px;
   font-size: 16px;
   line-height: 24px;
   font-family: "Roboto", "Arial", sans-serif;
@@ -23,6 +23,11 @@ a {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -284,7 +289,7 @@ a {
 .about-us-block {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 55px;
+  padding-bottom: 60px;
 }
 
 .about-us-description {
@@ -305,7 +310,9 @@ a {
   justify-content: space-between;
   flex-direction: column;
   width: 435px;
-  min-height: 115px;
+  min-height: 120px;
+  padding: 0;
+  margin: 0;
   margin-top: 22px;
 }
 
@@ -316,7 +323,20 @@ a {
 }
 
 .ability-item {
+  position: relative;
+  width: 430px;
+  padding-left: 35px;
   list-style: none;
+}
+
+.ability-item::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 10px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
 }
 
 .advantages {
@@ -419,11 +439,15 @@ caption.title-about-us {
   text-transform: uppercase;
 }
 
+.map {
+  position: relative;
+}
+
 .writetous {
   width: 319px;
   min-height: 308px;
   position: absolute;
-  top: 1897px;
+  top: 54px;
   left: 140px;
   background-color: #ffffff;
 }
