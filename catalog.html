@@ -32,13 +32,18 @@
         <aside class="filters">
           <form action="/echo" method="post">
             <h3 class="title-item">Стоимость:</h3>
-            <div class="range">
-              <div class="greenline"></div>
-              <div class="greyline"></div>
-            </div>
-            <div class="pricerange-block">
-              <label class="pricerange">От <input class="price min-price" type="number" name="minprice" value="0" step="500"></label>
-              <label class="pricerange">До <input class="price max-price" type="number" name="maxprice" value="15000" step="500"></label>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
             </div>
             <p class="title-item">Сетка:</p>
             <ul class="layouts">
