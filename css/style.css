@@ -462,18 +462,25 @@ caption.title-about-us {
 .partners-block {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 1160px;
   min-height: 100px;
+  padding: 0;
+  margin: 0;
   margin-top: 53px;
   margin-bottom: 33px;
+  list-style: none;
+}
+
+.partners-block li {
+  position: relative;
+  width: 260px;
+  min-height: 95px;
+  text-align: center;
 }
 
 .partners-block a {
-  box-sizing: inherit;
-  width: 260px;
-  min-height: 95px;
   opacity: 0.2;
-  text-align: center;
 }
 
 .partner-1 {
@@ -490,6 +497,16 @@ caption.title-about-us {
 
 .partner-4 {
   padding-top: 5px;
+}
+
+.partners-block li[class^="partner-"]:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: -21px;
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
 }
 
 .partners-block a:hover {
@@ -531,6 +548,17 @@ caption.title-about-us {
 
 .map {
   position: relative;
+}
+
+.map::before {
+  content: "";
+  position: absolute;
+  left: 820px;
+  top: 89px;
+  width: 231px;
+  height: 190px;
+  background-image: url("../img/map-marker.png");
+  background-repeat: no-repeat;
 }
 
 .writetous {
@@ -590,27 +618,31 @@ a.writetous-btn:active {
 }
 
 .writetous-modal {
-  display: none;
   width: 960px;
   min-height: 590px;
   margin: 0 auto;
   padding: 0;
   background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  outline: 2px solid red;
 }
 
 .writetous-modal-container {
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
-  justify-content: space-between;
   width: 800px;
   margin: 0 auto;
   padding: 0 10px;
+  margin-top: 10px;
+  outline: 2px solid black;
 }
 
 .writetous-modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: inline-block;
+  padding-top: 0;
+  outline: 2px solid violet;
+
 }
 
 .close-btn {
@@ -628,16 +660,19 @@ a.writetous-btn:active {
   opacity: 0.1;
 }
 
-.modal-user-form form {
+/*.modal-user-form form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+}*/
 
 .userdata {
+  display: inline-block;
+  width: 360px;
   line-height: 18px;
   font-weight: bold;
   color: #000000;
+  outline: 2px solid red;
 }
 
 .message-text,

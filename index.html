@@ -119,13 +119,13 @@
       </section>
       <section class="partners">
         <div class="container">
-          <div class="partners-block">
-            <h2 class="visually-hidden">Партнеры студии Нёрдс</h2>
-            <a class="partner-1" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="Логотип HTML Академии" title="HTML Академия"></a>
-            <a class="partner-2" href="#"><img src="img/logo-2.png" width="209" height="90" alt="Логотип Барбершопа Бородинский" title="Барбершоп Бородинский"></a>
-            <a class="partner-3" href="#"><img src="img/logo-3.png" width="185" height="52" alt="Логотип проекта PiNK" title="Яркий мир вместе с PiNK"></a>
-            <a class="partner-4" href="#"><img src="img/logo-4.png" width="173" height="84" alt="Логотип магазина игрушек Mishka" title="Магазин игрушек Mishka"></a>
-          </div>
+          <h2 class="visually-hidden">Партнеры студии Нёрдс</h2>
+          <ul class="partners-block">
+            <li class="partner-1"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="Логотип HTML Академии" title="HTML Академия"></a></li>
+            <li class="partner-2"><a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Логотип Барбершопа Бородинский" title="Барбершоп Бородинский"></a></li>
+            <li class="partner-3"><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Логотип проекта PiNK" title="Яркий мир вместе с PiNK"></a></li>
+            <li class="partner-4"><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Логотип магазина игрушек Mishka" title="Магазин игрушек Mishka"></a></li>
+          </ul>
         </div>
         <div class="bottom-line last-bottom-line"></div>
       </section>
@@ -149,10 +149,13 @@
           </div>
           <div class="modal-user-form">
             <form action="/echo" method="post">
-                <label class="userdata">Ваше имя:<input class="userdata-text" type="text" name="username" placeholder="Представьтесь, пожалуйста"></label>
-                <label class="userdata">Ваш e-mail:<input class="userdata-text" type="text" name="e-mail" placeholder="Для отправки ответа"></label>
-                <label class="userdata">Текст письма:<textarea class="message-text" name="usertext" rows="5" placeholder="В свободной форме"></textarea></label>
-                <button class="btn btn-form" type="submit">Отправить</button>
+              <label class="userdata" for="username-field">Ваше имя:</label>
+              <label class="userdata" for="e-mail-field">Ваш e-mail:</label>
+              <input class="userdata-text" type="text" name="username" id="username-field" placeholder="Представьтесь, пожалуйста">
+              <input class="userdata-text" type="text" name="e-mail" id="e-mail-field" placeholder="Для отправки ответа">
+              <label class="userdata" for="message-field">Текст письма:</label>
+              <textarea class="message-text" name="usertext" rows="5" id="message-field" placeholder="В свободной форме"></textarea>
+              <button class="btn btn-form" type="submit">Отправить</button>
             </form>
           </div>
         </div>
