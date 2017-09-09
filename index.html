@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <!-- <header class="main-header">
       <div class="container">
         <nav class="main-menu">
           <img class="logo" src="img/svg-nerds/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс" title="Нёрдс - дизайн-студия из Краснодара">
@@ -139,28 +139,26 @@
             <p>тел. +7 (812) 275-75-75</p>
             <a class="btn writetous-btn" href="writetous.html">Напишите нам</a>
           </div>
-        </div>
+        </div> -->
       </section>
       <section class="writetous-modal">
         <div class="writetous-modal-container">
-          <div class="writetous-modal-header">
-            <h2 class="title-2">Напишите нам</h2>
-            <div class="close-btn"></div>
-          </div>
-          <div class="modal-user-form">
-            <form action="/echo" method="post">
-              <label class="userdata" for="username-field">Ваше имя:</label>
-              <label class="userdata" for="e-mail-field">Ваш e-mail:</label>
+          <button class="close-btn"></button>
+          <h2 class="title-2 writetous-modal-title">Напишите нам</h2>
+          <form class="modal-user-form" action="/echo" method="post">
+            <label class="userdata" for="username-field">Ваше имя:</label>
+            <label class="userdata" for="e-mail-field">Ваш e-mail:</label>
+            <div class="text-fields">
               <input class="userdata-text" type="text" name="username" id="username-field" placeholder="Представьтесь, пожалуйста">
               <input class="userdata-text" type="text" name="e-mail" id="e-mail-field" placeholder="Для отправки ответа">
-              <label class="userdata" for="message-field">Текст письма:</label>
-              <textarea class="message-text" name="usertext" rows="5" id="message-field" placeholder="В свободной форме"></textarea>
-              <button class="btn btn-form" type="submit">Отправить</button>
-            </form>
-          </div>
+            </div>
+            <label class="userdata" for="message-field">Текст письма:</label>
+            <textarea class="message-text" name="usertext" rows="5" id="message-field" placeholder="В свободной форме"></textarea>
+            <button class="btn btn-form" type="button">Отправить</button>
+          </form>
         </div>
       </section>
-    </main>
+    <!-- </main>
     <footer class="main-footer">
       <div class="container">
         <div class="footer-container">
@@ -175,6 +173,6 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
