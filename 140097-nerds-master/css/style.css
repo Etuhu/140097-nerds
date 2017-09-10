@@ -9,8 +9,8 @@ html {
 
 html,
 body {
-  width: 1440px;
   min-width: 1200px;
+  max-width: 1440px;
   font-size: 16px;
   line-height: 24px;
   font-family: "Roboto Regular", "Arial", sans-serif;
@@ -25,11 +25,6 @@ a {
   text-decoration: none;
   text-transform: uppercase;
 }
-
-/*img {
-  max-width: 100%;
-  height: auto;
-}*/
 
 .container {
   width: 1200px;
@@ -64,18 +59,18 @@ a {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-weight: normal;
   color: #000000;
-  outline: 1px dotted black;
 }
 
 .main-menu-navigation {
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 40px;
   width: 600px;
   margin: 0;
   margin-top: 14px;
   margin-left: 202px;
   padding: 0;
-  outline: 1px dotted black;
 }
 
 .main-menu-navigation li {
@@ -94,6 +89,8 @@ a {
 .main-menu-cart {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
+  min-height: 40px;
   width: 115px;
   margin: 0;
   margin-top: 14px;
@@ -137,7 +134,7 @@ a {
 
 .features {
   display: flex;
-  height: 430px;
+  height: 422px;
   background-color: #eeeeee;
 }
 
@@ -173,7 +170,7 @@ a {
 
 .feature-item {
   height: 280px;
-  margin-top: 75px;
+  margin-top: 66px;
 }
 
 .feature-item-1 {
@@ -193,7 +190,7 @@ a {
 }
 
 .feature-item p:nth-child(2) {
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 }
 
 .feature-item-title {
@@ -203,7 +200,7 @@ a {
   font-weight: normal;
   color: #000000;
   text-align: left;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .feature-container {
@@ -223,7 +220,7 @@ a {
   justify-content: space-between;
   position: absolute;
   left: 555px;
-  top: 316px;
+  top: 308px;
   width: 89px;
   height: 18px;
   margin: 0 auto;
@@ -298,19 +295,19 @@ a {
 
 .feature-block:nth-child(1) {
   background-image: url("../img/slide1.png");
-  background-position: 450px 18px;
+  background-position: 451px 9px;
   background-repeat: no-repeat;
 }
 
 .feature-block:nth-child(2) {
   background-image: url("../img/slide2.png");
-  background-position: 515px 0;
+  background-position: 517px 0;
   background-repeat: no-repeat;
 }
 
 .feature-block:nth-child(3) {
   background-image: url("../img/slide3.png");
-  background-position: 420px 18px;
+  background-position: 421px 19px;
   background-repeat: no-repeat;
 }
 
@@ -330,22 +327,28 @@ a {
 .product-block {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
+  margin-bottom: 77px;
 }
 
 .product-item {
   width: 360px;
-  height: 348px;
+  min-height: 350px;
 }
 
 .product-item .title-3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  padding: 0;
+  margin: 0;
+  margin-top: 19px;
+  padding-bottom: 4px;
 }
 
 .product-item p {
   max-width: 260px;
-  margin-bottom: 33px;
+  padding: 0;
+  padding-top: 11px;
+  padding-bottom: 32px;
+  margin: 0;
+  margin-left: 1px;
 }
 
 .order-btn {
@@ -406,20 +409,20 @@ a {
 .about-us-block {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
 }
 
 .about-us-description {
   width: 660px;
-  margin-top: 38px;
+  margin-top: 36px;
 }
 
 .about-us-description .title-2 {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 .about-us-description p {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .abilities {
@@ -430,19 +433,19 @@ a {
   min-height: 120px;
   padding: 0;
   margin: 0;
-  margin-top: 22px;
+  margin-top: 23px;
 }
 
 .about-us-advantage {
   width: 360px;
   height: 415px;
-  margin-top: 42px;
+  margin-top: 40px;
 }
 
 .ability-item {
   position: relative;
-  width: 430px;
-  padding-left: 35px;
+  min-width: 430px;
+  padding-left: 37px;
   list-style: none;
 }
 
@@ -450,7 +453,7 @@ a {
   content: "";
   position: absolute;
   left: 1px;
-  top: 10px;
+  top: 12px;
   width: 25px;
   height: 2px;
   background-color: #fb565a;
@@ -458,23 +461,30 @@ a {
 
 .advantages {
   width: 360px;
-  min-height: 100px;
+  height: 90px;
   margin-top: 30px;
+  margin-left: 1px;
 }
 
 caption.title-about-us {
-  margin-bottom: 60px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .advantage-percent-item {
   width: 120px;
+  height: 50px;
   text-align: left;
-  vertical-align: top;
+  vertical-align: middle;
   font-size: 45px;
   line-height: 10.06px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
   color: #000000;
+  padding: 0;
+  padding-bottom: 10px;
+  margin: 0;
 }
 
 .advantage-percent-item sup {
@@ -484,6 +494,15 @@ caption.title-about-us {
 .advantage-percent-title {
   line-height: 18px;
   color: #283136;
+  vertical-align: middle;
+  padding: 0;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.partners {
+  margin: 0;
+  padding: 0;
 }
 
 .partners-block {
@@ -494,14 +513,14 @@ caption.title-about-us {
   min-height: 100px;
   padding: 0;
   margin: 0;
-  margin-top: 53px;
-  margin-bottom: 33px;
+  margin-top: 44px;
+  margin-bottom: 36px;
   list-style: none;
 }
 
 .partners-block li {
   position: relative;
-  width: 260px;
+  width: 259px;
   min-height: 95px;
   text-align: center;
 }
@@ -575,6 +594,10 @@ caption.title-about-us {
 
 .map {
   position: relative;
+  height: 420px;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .map::before {
@@ -587,6 +610,11 @@ caption.title-about-us {
   background-image: url("../img/map-marker.png");
   background-repeat: no-repeat;
 }
+
+/*.map img {
+  max-width: 100%;
+  height: auto;
+}*/
 
 .writetous {
   width: 319px;
@@ -609,6 +637,8 @@ caption.title-about-us {
   font-family: "Roboto Regular", "Arial", sans-serif;
   line-height: 18px;
   color: #666666;
+  margin: 0;
+  padding: 0;
 }
 
 .writetous-container p:first-child {
@@ -621,17 +651,19 @@ caption.title-about-us {
 }
 
 .writetous-container p:nth-child(2) {
-  margin-top: 22px;
+  margin-top: 23px;
+  margin-left: 1px;
 }
 
 .writetous-container p:nth-child(3) {
-  margin-top: 18px;
+  margin-top: 19px;
+  margin-left: 1px;
 }
 
 a.writetous-btn {
   width: 219px;
   height: 50px;
-  margin-top: 22px;
+  margin-top: 37px;
   background-color: #fb565a;
 }
 
@@ -807,10 +839,11 @@ a.writetous-btn:active {
 .social {
   display: flex;
   justify-content: space-between;
-  width: 260px;
+  width: 259px;
+  margin: 0;
+  padding: 0;
   min-height: 75px;
   margin-top: 11px;
-  padding-left: 0;
   list-style: none;
 }
 
@@ -822,6 +855,7 @@ a.writetous-btn:active {
   background-color: #e1e1e1;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-size: auto;
 }
 
 .social-btn:hover {
@@ -866,7 +900,7 @@ a.writetous-btn:active {
 }
 
 .friendship span:first-child {
-  margin-top: 18px;
+  margin-top: 16px;
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
@@ -874,7 +908,7 @@ a.writetous-btn:active {
 }
 
 .friendship span:last-child {
-  margin-top: 10px;
+  margin-top: 11px;
   line-height: 22px;
   color: #444444;
 }
@@ -883,9 +917,13 @@ a.writetous-btn:active {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 235px;
-  padding-top: 31px;
+  height: 233px;
+  padding-top: 30px;
   background-color: #eeeeee;
+}
+
+.catalog-title .title-1 {
+  padding-right: 5px;
 }
 
 .catalog-container {
@@ -897,13 +935,17 @@ a.writetous-btn:active {
 .filters {
   width: 260px;
   height: 800px;
-  margin-top: 35px;
+  margin-right: 0;
+  margin-top: 36px;
   padding: 0;
 }
 
 .range-filter {
   width: 261px;
-  margin: 50px auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 47px;
+  margin-bottom: 57px;
 }
 
 .range-controls {
@@ -978,6 +1020,10 @@ a.writetous-btn:active {
   background: #eeeeee;
 }
 
+.filters .title-item:nth-child(3) {
+  margin-bottom: 11px;
+}
+
 .layouts {
   display: flex;
   flex-direction: column;
@@ -985,7 +1031,7 @@ a.writetous-btn:active {
   min-height: 105px;
   padding: 0;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 }
 
 .layouts label {
@@ -1043,14 +1089,14 @@ a.writetous-btn:active {
   padding: 0;
   background-image: url("../img/svg-nerds/radio-on.svg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center;
   cursor: pointer;
   opacity: 0.4;
 }
 
 .layouts li {
   padding: 0;
-  padding-left: 35px;
+  padding-left: 37px;
   margin: 0;
 }
 
@@ -1072,19 +1118,22 @@ a.writetous-btn:active {
   cursor: pointer;
 }
 
+.filters .title-item:nth-child(5) {
+  margin-bottom: 13px;
+}
+
 .layouts-features {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 190px;
+  min-height: 185px;
   padding: 0;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .layouts-features label {
   position: relative;
-  padding-left: 1px;
 }
 
 .layouts-features label:hover {
@@ -1095,9 +1144,9 @@ a.writetous-btn:active {
   content: "";
   position: absolute;
   top: -5px;
-  left: -37px;
-  width: 30px;
-  height: 30px;
+  left: -43px;
+  width: 35px;
+  height: 35px;
   margin: 0;
   padding: 0;
   background-image: url("../img/svg-nerds/checkbox-off.svg");
@@ -1127,10 +1176,10 @@ a.writetous-btn:active {
 .layouts-features input[type=checkbox]:checked ~ label[for="layout-feature-gallery"]::before,
 .layouts-features input[type=checkbox]:checked ~ label[for="layout-feature-cart"]::before {
   position: absolute;
-  top: -5px;
-  left: -36px;
-  width: 30px;
-  height: 30px;
+  top: -7px;
+  left: -41px;
+  width: 35px;
+  height: 35px;
   margin: 0;
   padding: 0;
   background-image: url("../img/svg-nerds/checkbox-on.svg");
@@ -1142,7 +1191,7 @@ a.writetous-btn:active {
 
 .layouts-features li {
   padding: 0;
-  padding-left: 35px;
+  padding-left: 37px;
   margin: 0;
 }
 
@@ -1184,7 +1233,8 @@ a.writetous-btn:active {
   justify-content: space-between;
   align-self: flex-end;
   width: 760px;
-  padding-top: 5px;
+  padding-top: 3px;
+  padding-right: 5px;
 }
 
 .sorting {
@@ -1196,17 +1246,32 @@ a.writetous-btn:active {
 }
 
 .sorting-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 360px;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  width: 405px;
+  margin-top: 14px;
 }
 
 .sorting-type {
+  display: inline-block;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
   opacity: 0.3;
+  padding-top: 3px;
+}
+
+.sorting-type:nth-child(1) {
+  margin-left: 42px;
+}
+
+.sorting-type:nth-child(2) {
+  margin-left: 22px;
+}
+
+.sorting-type:nth-child(3) {
+  margin-left: 22px;
 }
 
 .sorting-type:hover {
@@ -1225,6 +1290,18 @@ a.writetous-btn:active {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   opacity: 0.2;
+  padding-top: 3px;
+}
+
+.sorting-down {
+  margin-left: 43px;
+}
+
+.sorting-up {
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+
 }
 
 .sorting-direction:hover {
@@ -1249,15 +1326,17 @@ a.writetous-btn:active {
   justify-content: space-between;
   width: 800px;
   flex-wrap: wrap;
+  padding: 0;
+  padding-left: 39px;
   margin: 0;
-  margin-top: 79px;
+  margin-top: 80px;
 }
 
 .catalog-item {
   position: relative;
   width: 360px;
   height: 576px;
-  margin-top: 72px;
+  margin-top: 73px;
   list-style: none;
 }
 
@@ -1299,7 +1378,7 @@ a.writetous-btn:active {
   display: block;
   position: absolute;
   width: 360px;
-  height: 231px;
+  min-height: 231px;
   bottom: 0;
   background-color: #eeeeee;
   text-align: center;
@@ -1309,7 +1388,7 @@ a.writetous-btn:active {
 .catalog-item-description .title-item {
   margin: 0 auto;
   padding: 0;
-  padding-top: 27px;
+  padding-top: 26px;
 }
 
 .catalog-item-description a {
@@ -1317,10 +1396,19 @@ a.writetous-btn:active {
 }
 
 .catalog-item-description p {
-  padding: 0 80px;
+  padding: 0 90px;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 15px;
 }
+
+/*.catalog-item-description:nth-child(2) p {
+  padding: 0 60px;
+}
+
+.catalog-item-description:nth-child(5) p,
+.catalog-item-description:nth-child(6) p {
+  padding: 0 70px;
+}*/
 
 .catalog-order-btn {
   width: 200px;
